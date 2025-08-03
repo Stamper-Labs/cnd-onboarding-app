@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import VerticalStack from "../../../components/basics/VerticalStack/VerticalStack";
+import VerticalStack from "../../../components/layout/VerticalStack/VerticalStack";
 import winnersImg from "../../../assets/winners.svg";
 import { HeroImageStyle, HeroLegendBoxStyle } from "./HeroItemStack.style";
 

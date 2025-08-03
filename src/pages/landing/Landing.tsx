@@ -1,22 +1,17 @@
 import React from "react";
-import RootBox from "../../components/basics/RootBox/RootBox";
-import LandingAppBar from "./LandingAppBar/LandingAppBar";
-import VerticalStack from "../../components/basics/VerticalStack/VerticalStack";
-import DefaultContainer from "../../components/basics/DefaultContainer/DefaultContainer";
-import HorizontalStack from "../../components/basics/HorizontalStack/HorizontalStack";
-import HeroItemStack from "./HeroItemStack/HeroItemStack";
+import RootBox from "../../components/layout/RootBox/RootBox";
+import StickyAppBar from "../../components/layout/StickyAppBar/StickyAppBar";
+import LargeContainer from "../../components/layout/LargeContainer/LargeContainer";
+import LandingToolbar from "./LandingToolbar/LandingToolbar";
 
 const LandingPage: React.FC = () => {
   return (
     <RootBox>
-      <LandingAppBar />
-      <VerticalStack>
-        <DefaultContainer>
-          <HorizontalStack>
-            <HeroItemStack />
-          </HorizontalStack>
-        </DefaultContainer>
-      </VerticalStack>
+      <StickyAppBar>
+        <LargeContainer>
+          <LandingToolbar />
+        </LargeContainer>
+      </StickyAppBar>
     </RootBox>
   );
 };

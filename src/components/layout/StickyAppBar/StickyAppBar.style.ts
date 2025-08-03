@@ -1,7 +1,7 @@
 import { AppBar, styled } from "@mui/material";
 
 // AppBar is by default flex column
-export const DefaultAppBarStyle = styled(AppBar)(() => ({
+export const StickyAppBarStyle = styled(AppBar)(() => ({
   height: "80px",
   justifyContent: "center",
 }));

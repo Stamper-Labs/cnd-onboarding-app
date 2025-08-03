@@ -1,13 +1,13 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const ToolbarActions: React.FC = () => {
+const ActionsFragment: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <Button color="inherit">Register</Button>
       <Button color="inherit">Login</Button>
-    </>
+    </React.Fragment>
   );
 };
 
-export default ToolbarActions;
+export default ActionsFragment;

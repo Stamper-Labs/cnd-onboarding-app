@@ -1,3 +1,4 @@
+import React from "react";
 import { RootBoxStyle } from "./RootBox.style";
 
 interface RootBoxProps {

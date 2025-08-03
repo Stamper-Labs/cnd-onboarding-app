@@ -1,22 +1,22 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import DirectionsBoatFilledIcon from "@mui/icons-material/DirectionsBoatFilled";
-import { ToolbarLogoStyle } from "./ToolbarLogo.style";
+import FlexItemRowStack from "../../../components/layout/FlexItemRowStack/FlexItemRowStack";
 
-interface ToolbarLogoProps {
+interface LogoRowStackProps {
   children?: React.ReactNode;
 }
 
-const ToolbarLogo: React.FC<ToolbarLogoProps> = () => {
+const LogoRowStack: React.FC<LogoRowStackProps> = () => {
   return (
-    <ToolbarLogoStyle>
+    <FlexItemRowStack>
       <DirectionsBoatFilledIcon
         fontSize="large"
         color="inherit"
       ></DirectionsBoatFilledIcon>
       <Typography variant="h6">Connduct</Typography>
-    </ToolbarLogoStyle>
+    </FlexItemRowStack>
   );
 };
 
-export default ToolbarLogo;
+export default LogoRowStack;
