@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type React from "react";
-import { DefaultContainerStyle } from "./DefaultConteiner.style";
+import { DefaultContainerStyle } from "./DefaultContainer.style";
 
 interface DefaultContainerProps {
   children?: ReactNode;
