@@ -1,7 +1,6 @@
-import { styled } from "@mui/material/styles";
-import { Box } from "@mui/material";
+import { Box, styled } from "@mui/material";
 
-export const LandingPageFrame = styled(Box)(({ theme }) => ({
+export const RootBoxStyle = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
   minHeight: "100vh",
   display: "grid",
