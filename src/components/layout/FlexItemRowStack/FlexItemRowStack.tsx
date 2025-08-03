@@ -7,9 +7,7 @@ interface FlexItemRowStackProps {
 
 const FlexItemRowStack: React.FC<FlexItemRowStackProps> = ({ children }) => {
   return (
-    <FlexItemRowStackStyle gap={1} direction={"row"}>
-      {children}
-    </FlexItemRowStackStyle>
+    <FlexItemRowStackStyle direction={"row"}>{children}</FlexItemRowStackStyle>
   );
 };
 

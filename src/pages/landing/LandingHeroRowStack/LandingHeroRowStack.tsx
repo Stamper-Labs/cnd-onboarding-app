@@ -1,12 +1,16 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import VerticalStack from "../../../components/layout/VerticalStack/VerticalStack";
+import VerticalStack from "../../../components/layout/ColStack/ColStack";
 import winnersImg from "../../../assets/winners.svg";
-import { HeroImageStyle, HeroLegendBoxStyle } from "./HeroItemStack.style";
+import {
+  HeroImageStyle,
+  HeroLegendBoxStyle,
+} from "./LandingHeroRowStack.style";
+import RowStack from "../../../components/layout/RowStack/RowStack";
 
-const HeroItemStack: React.FC = () => {
+const LandingHeroRowStack: React.FC = () => {
   return (
-    <>
+    <RowStack>
       <HeroLegendBoxStyle>
         <VerticalStack>
           <Typography variant="h3">
@@ -19,8 +23,8 @@ const HeroItemStack: React.FC = () => {
         </VerticalStack>
       </HeroLegendBoxStyle>
       <HeroImageStyle src={winnersImg} alt="Onboarding illustration" />
-    </>
+    </RowStack>
   );
 };
 
-export default HeroItemStack;
+export default LandingHeroRowStack;
