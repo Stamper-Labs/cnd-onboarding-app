@@ -1,14 +1,13 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import winnersImg from "../../../assets/winners.svg";
-import FlexItemRowStack from "../../../components/layout/FlexItemRowStack/FlexItemRowStack";
 import FlexItemBox from "../../../components/layout/FlexItemBox/FlexItemBox";
 import FlexItemBoxImg from "../../../components/layout/FlexItemBoxImg/FlexItemBoxImg";
 import RowStack from "../../../components/layout/RowStack/RowStack";
 
-const HeroFlexItemRowStack: React.FC = () => {
+const HeroRowStack: React.FC = () => {
   return (
-    <FlexItemRowStack>
+    <RowStack>
       <FlexItemBox>
         <Typography variant="h3" gutterBottom>
           The seamless onboarding experience
@@ -28,8 +27,8 @@ const HeroFlexItemRowStack: React.FC = () => {
         </RowStack>
       </FlexItemBox>
       <FlexItemBoxImg path={winnersImg} />
-    </FlexItemRowStack>
+    </RowStack>
   );
 };
 
-export default HeroFlexItemRowStack;
+export default HeroRowStack;
