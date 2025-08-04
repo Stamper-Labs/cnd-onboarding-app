@@ -1,11 +1,11 @@
 import { ColStackStyle } from "./ColStack.style";
 
-interface VerticalStackProps {
+interface ColStackProps {
   children: React.ReactNode;
 }
 
-const VerticalStack: React.FC<VerticalStackProps> = ({ children }) => {
-  return <ColStackStyle>{children}</ColStackStyle>;
+const ColStack: React.FC<ColStackProps> = ({ children }) => {
+  return <ColStackStyle spacing={2}>{children}</ColStackStyle>;
 };
 
-export default VerticalStack;
+export default ColStack;

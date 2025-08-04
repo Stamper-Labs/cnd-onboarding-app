@@ -6,7 +6,11 @@ interface RowStackProps {
 }
 
 const RowStack: React.FC<RowStackProps> = ({ children }) => {
-  return <RowStackStyle direction="row">{children}</RowStackStyle>;
+  return (
+    <RowStackStyle direction="row" spacing={1}>
+      {children}
+    </RowStackStyle>
+  );
 };
 
 export default RowStack;

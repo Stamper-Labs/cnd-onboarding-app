@@ -1,10 +1,10 @@
 import React from "react";
 import RootBox from "../../components/layout/RootBox/RootBox";
+import ColStack from "../../components/layout/ColStack/ColStack";
+import HeroFlexItemRowStack from "./HeroFlexItemRowStack/HeroFlexItemRowStack";
 import StickyAppBar from "../../components/layout/StickyAppBar/StickyAppBar";
 import LargeContainer from "../../components/layout/LargeContainer/LargeContainer";
 import LandingToolbar from "./LandingToolbar/LandingToolbar";
-import ColStack from "../../components/layout/ColStack/ColStack";
-import LandingHeroRowStack from "./LandingHeroRowStack/LandingHeroRowStack";
 
 const LandingPage: React.FC = () => {
   return (
@@ -14,11 +14,11 @@ const LandingPage: React.FC = () => {
           <LandingToolbar />
         </LargeContainer>
       </StickyAppBar>
-      <ColStack>
-        <LargeContainer>
-          <LandingHeroRowStack />
-        </LargeContainer>
-      </ColStack>
+      <LargeContainer>
+        <ColStack>
+          <HeroFlexItemRowStack />
+        </ColStack>
+      </LargeContainer>
     </RootBox>
   );
 };

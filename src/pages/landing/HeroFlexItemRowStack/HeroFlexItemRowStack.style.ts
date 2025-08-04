@@ -5,9 +5,8 @@ export const HeroLegendBoxStyle = styled(Box)(() => ({
 }));
 
 export const HeroImageStyle = styled("img")(() => ({
-  flex: 1,
   width: "100%",
   height: "auto",
-  maxWidth: "50%",
+  maxWidth: "100%",
   objectFit: "contain",
 }));

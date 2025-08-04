@@ -5,5 +5,5 @@ export const RootBoxStyle = styled(Box)(({ theme }) => ({
   minHeight: "100vh",
   display: "grid",
   gridTemplateColumns: "1fr",
-  gridTemplateRows: "auto 1fr auto",
+  gridTemplateRows: "auto 1fr",
 }));

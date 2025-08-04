@@ -1,12 +1,12 @@
 import { Toolbar } from "@mui/material";
 import React from "react";
-import LogoRowStack from "../LogoRowStack/LogoRowStack";
 import ActionsFragment from "../ActionsFragment/ActionsFragment";
+import LogoFlexItemRowStack from "../LogoFlexItemRowStack/LogoFlexItemRowStack";
 
 const LandingToolbar: React.FC = () => {
   return (
     <Toolbar disableGutters>
-      <LogoRowStack />
+      <LogoFlexItemRowStack />
       <ActionsFragment />
     </Toolbar>
   );

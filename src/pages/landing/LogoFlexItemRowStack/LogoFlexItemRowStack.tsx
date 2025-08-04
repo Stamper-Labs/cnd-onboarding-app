@@ -3,11 +3,11 @@ import React from "react";
 import DirectionsBoatFilledIcon from "@mui/icons-material/DirectionsBoatFilled";
 import FlexItemRowStack from "../../../components/layout/FlexItemRowStack/FlexItemRowStack";
 
-interface LogoRowStackProps {
+interface LogoFlexItemRowStackProps {
   children?: React.ReactNode;
 }
 
-const LogoRowStack: React.FC<LogoRowStackProps> = () => {
+const LogoFlexItemRowStack: React.FC<LogoFlexItemRowStackProps> = () => {
   return (
     <FlexItemRowStack>
       <DirectionsBoatFilledIcon
@@ -19,4 +19,4 @@ const LogoRowStack: React.FC<LogoRowStackProps> = () => {
   );
 };
 
-export default LogoRowStack;
+export default LogoFlexItemRowStack;
